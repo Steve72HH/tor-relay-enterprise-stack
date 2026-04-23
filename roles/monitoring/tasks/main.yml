@@ -1,0 +1,29 @@
+- name: Install Prometheus
+  apt:
+    name: prometheus
+    state: present
+
+- name: Install Grafana
+  apt:
+    name: grafana
+    state: present
+
+- name: Install Alertmanager
+  apt:
+    name: prometheus-alertmanager
+    state: present
+
+- name: Deploy alertmanager config
+  template:
+    src: alertmanager.yml
+    dest: /etc/alertmanager/alertmanager.yml
+
+- name: Start services
+  systemd:
+    name: "{{ item }}"
+    state: started
+    enabled: true
+  loop:
+    - prometheus
+    - grafana-server
+    - prometheus-alertmanager
