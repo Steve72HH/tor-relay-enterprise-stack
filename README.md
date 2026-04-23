@@ -25,8 +25,21 @@ Dieses Repository enthält eine produktionsreife Infrastruktur zum Betrieb von T
 - Alerting via Telegram
 
 ---
+## 📘 Buch
 
+Dieses Projekt begleitet das Buch:
+
+**Tor – Das Praxis-Handbuch**
+
+Alle gezeigten Setups sind hier vollständig reproduzierbar.
+---
+
+![Stars](https://img.shields.io/github/stars/Steve72HH/tor-relay-enterprise-stack?style=social)
+![Deploy](https://img.shields.io/badge/deployment-automated-brightgreen)
+![Security](https://img.shields.io/badge/security-enterprise-green)
 ## 🚀 Deployment
 
 ```bash
 ansible-playbook playbooks/site.yml
+´´´´
+
