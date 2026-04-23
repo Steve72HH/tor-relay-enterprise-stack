@@ -1,0 +1,6 @@
+*.log
+*.retry
+*.tmp
+.env
+*.pem
+*.key
