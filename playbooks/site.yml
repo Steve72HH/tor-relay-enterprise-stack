@@ -1,1 +1,10 @@
+- hosts: relays
+  become: true
+  roles:
+    - security_stack
+    - crowdsec
 
+- hosts: monitoring
+  become: true
+  roles:
+    - monitoring
