@@ -1,10 +1,25 @@
-Production-ready Tor Relay infrastructure with Ansible automation, security hardening (UFW, Fail2ban, CrowdSec), monitoring (Prometheus + Grafana) and alerting (Alertmanager + Telegram).
+# Tor Relay Enterprise Stack
 
-Designed for scalable multi-relay deployments across providers.
+Dieses Repository enthält eine produktionsreife Infrastruktur zum Betrieb von Tor-Relays mit Fokus auf:
 
-Includes:
-- Automated relay setup
-- Enterprise security stack
-- CrowdSec integration
-- Monitoring & dashboards
-- Alerting system
+- Sicherheit (UFW, Fail2ban, CrowdSec)
+- Monitoring (Prometheus + Grafana)
+- Alerting (Alertmanager + Telegram)
+- Automatisierung (Ansible)
+
+---
+
+## 🔧 Features
+
+- Vollautomatisches Setup von Tor-Relays
+- Enterprise Security Stack
+- CrowdSec Integration (kollektive Bedrohungserkennung)
+- Echtzeit Monitoring
+- Alerting via Telegram
+
+---
+
+## 🚀 Deployment
+
+```bash
+ansible-playbook playbooks/site.yml
