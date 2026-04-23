@@ -4,9 +4,9 @@
 ![Ansible](https://img.shields.io/badge/automation-Ansible-red)
 ![Security](https://img.shields.io/badge/security-UFW%20%7C%20Fail2ban%20%7C%20CrowdSec-blue)
 ![Monitoring](https://img.shields.io/badge/monitoring-Prometheus%20%7C%20Grafana-orange)
-![License](https://img.shields.io/github/license/DEIN-NAME/tor-relay-enterprise-stack)
-![Last Commit](https://img.shields.io/github/last-commit/DEIN-NAME/tor-relay-enterprise-stack)
-![Issues](https://img.shields.io/github/issues/DEIN-NAME/tor-relay-enterprise-stack)# Tor Relay Enterprise Stack
+![License](https://img.shields.io/github/license/Steve72HH/tor-relay-enterprise-stack)
+![Last Commit](https://img.shields.io/github/last-commit/Steve72HH/tor-relay-enterprise-stack)
+![Issues](https://img.shields.io/github/issues/Steve72HH/tor-relay-enterprise-stack)
 
 Dieses Repository enthält eine produktionsreife Infrastruktur zum Betrieb von Tor-Relays mit Fokus auf:
 
