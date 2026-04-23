@@ -1,1 +1,19 @@
+groups:
+- name: crowdsec
+  rules:
 
+  - alert: HighCrowdSecAlerts
+    expr: rate(crowdsec_alerts_total[5m]) > 5
+    for: 2m
+    labels:
+      severity: warning
+    annotations:
+      summary: "CrowdSec Alert Spike"
+
+  - alert: HighBlockedIPs
+    expr: rate(crowdsec_decisions_total[5m]) > 5
+    for: 2m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Many IPs blocked"
